@@ -23,11 +23,4 @@ class Produto
     {
         return $this->nome;
     }
-
-    public static function getIncrementador(): int
-    {
-        return self::$incrementador;
-    }
-
-
 }

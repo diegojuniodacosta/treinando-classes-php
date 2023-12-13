@@ -7,7 +7,7 @@ trait ImprimeTexto
     public function __toString(): string
     {
         return "O cliente está comprando a quantidade de {$this->quantidade} produtos com o nome "
-        . Produtos::$nome . " do tipo {$this->tipo} e da marca {$this->marca}
+        . self::$nome . " do tipo {$this->tipo} e da marca {$this->marca}
         que no estoque possui o Identificador {$this->id} com o preço: R$ {$this->preco}";
     }
 }
