@@ -8,7 +8,8 @@ spl_autoload_register(function (string $NomeCompletoDaClasse1) {
 
     // Substituir o namespace pelo namespace raiz
     // Namespace raiz = é a pasta raiz onde todos os arquivos estão localizados
-    $caminhoArquivo = str_replace('Diego','produtos', $NomeCompletoDaClasse1);
+    //$caminhoArquivo = str_replace('Diego','produtos', $NomeCompletoDaClasse1);
+    $caminhoArquivo = str_replace('App','shopping', $NomeCompletoDaClasse1);
 
     // Substituir a '\\' por '/'
     // Na separação das pastas é utilizado '/'

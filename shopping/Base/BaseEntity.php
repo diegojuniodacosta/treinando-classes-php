@@ -2,54 +2,34 @@
 
 namespace App\Base;
 
+use App\Models\Produto;
+
 abstract class BaseEntity
 {
-    private string $id;
-    private $createdDate;
-    private $updateDate;
+    protected int $id;
+    protected mixed $createdDate;
+    protected mixed $updateDate;
+    private static int $incrementador = 0;
 
-    public function getId(): string
+    public function incrementador(int $id)
     {
-        return $this->id;
-    }
-
-    public function setId(string $id): void
-    {
-        $this->id = $id;
+        $this->id = Produto::$incrementador++;
     }
 
     /**
      * @return mixed
      */
-    public function getCreatedDate()
+    public function getCreatedDate(): mixed
     {
         return $this->createdDate;
     }
 
     /**
-     * @param mixed $createdDate
-     */
-    public function setCreatedDate($createdDate): void
-    {
-        $this->createdDate = $createdDate;
-    }
-
-    /**
      * @return mixed
      */
-    public function getUpdateDate()
+    public function getUpdateDate(): mixed
     {
         return $this->updateDate;
     }
-
-    /**
-     * @param mixed $updateDate
-     */
-    public function setUpdateDate($updateDate): void
-    {
-        $this->updateDate = $updateDate;
-    }
-
-
 
 }

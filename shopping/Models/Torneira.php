@@ -8,7 +8,7 @@ require_once 'Produto.php';
 
 class Torneira extends Produto
 {
-    private bool $filtro;
+    protected bool $filtro;
 
     public function isFiltro(): bool
     {
@@ -22,12 +22,3 @@ class Torneira extends Produto
 
 
 }
-
-$teste = new Torneira();
-
-
-
-$teste->setNome('teste');
-$teste->
-
-var_dump($teste);

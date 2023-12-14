@@ -6,19 +6,21 @@ use App\Base\BaseEntity;
 
 class Produto extends BaseEntity
 {
-    private string $nome;
-    private string $marca;
-    private string $preco;
+    protected string $nome;
+    protected string $marca;
+    protected string $preco;
     private string $quantidade;
 
-    public function getNome(): string
+    public function __construct(string $nome, string $marca, string $preco)
     {
-        return $this->nome;
+        $this->nome  = $nome;
+        $this->marca = $marca;
+        $this->preco = $preco;
     }
 
-    public function setNome(string $nome): void
+    public function getNome()
     {
-        $this->nome = $nome;
+        return $this->nome;
     }
 
     public function getMarca(): string
@@ -26,30 +28,12 @@ class Produto extends BaseEntity
         return $this->marca;
     }
 
-    public function setMarca(string $marca): void
-    {
-        $this->marca = $marca;
-    }
-
     public function getPreco(): string
     {
         return $this->preco;
     }
 
-    public function setPreco(string $preco): void
-    {
-        $this->preco = $preco;
-    }
-
-    public function getQuantidade(): string
-    {
-        return $this->quantidade;
-    }
-
-    public function setQuantidade(string $quantidade): void
-    {
-        $this->quantidade = $quantidade;
-    }
 
 }
+
 

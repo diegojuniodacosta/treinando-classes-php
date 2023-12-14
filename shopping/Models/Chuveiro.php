@@ -6,7 +6,6 @@ class Chuveiro extends Produto
 {
     private string $potencia;
 
-
     public function getPotencia(): string
     {
         return $this->potencia;
