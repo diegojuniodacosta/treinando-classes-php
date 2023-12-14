@@ -4,6 +4,7 @@ require_once 'autoload.php';
 
 // Vamos informar quais classes iremos utilizar
 use App\Models\Produto;
+use App\Base\BaseEntity;
 
 $produtosCadastrados = [];
 
@@ -26,7 +27,7 @@ while (true) {
 }
 function AcessaOpcoes($entrada): void
 {
-    global $produtosCadastrados, $novoProduto, $linhas;
+    global $produtosCadastrados, $linhas, $cadastrado;
 
     if ($entrada == '1'){
         echo "Digite o nome do produto: ";
@@ -40,23 +41,28 @@ function AcessaOpcoes($entrada): void
         $novoProduto = new Produto($nomeProduto, $marcaProduto, $precoProduto);
 
         $produtosCadastrados[] = $novoProduto;
+
+        //file_put_contents('produtos.txt', $novoProduto, FILE_APPEND);
+        //   echo file_get_contents('produtos.txt');
     }
 
     if ($entrada == '2'){
         foreach ($produtosCadastrados as $produto){
-            $teste =
-                'Foi cadastrado o produto :' . $produto->getNome() .
-                'Da marca: ' . $produto->getMarca() .
-                'Com o preço: ' . $produto->getPreco(). PHP_EOL;
-            echo $teste;
-            file_put_contents('produtos.txt',$teste, FILE_APPEND);
-            //file_put_contents('cursos-php.txt', $novoCurso, FILE_APPEND);
+            echo $produto->__toString();
         }
     }
 
     if ($entrada == '3'){
-        echo "Ainda não foi feito! \n\n";
+        echo "Escolha os produtos: \n";
+        foreach ($produtosCadastrados as $cadastrado){
+            echo "Digite o Id: ";
+            echo $cadastrado->getId();
+            echo "Referente ao produto: " . $cadastrado->getNome();
+        }
     }
+
+    $entrada1 = fgets(STDIN);
+
 }
 
 

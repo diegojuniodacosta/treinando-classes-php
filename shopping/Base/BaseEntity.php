@@ -11,9 +11,10 @@ abstract class BaseEntity
     protected mixed $updateDate;
     private static int $incrementador = 0;
 
-    public function incrementador(int $id)
+    public function getId(): int
     {
-        $this->id = Produto::$incrementador++;
+       $this->id = ++self::$incrementador;
+       return $this->id;
     }
 
     /**

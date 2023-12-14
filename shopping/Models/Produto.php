@@ -9,7 +9,6 @@ class Produto extends BaseEntity
     protected string $nome;
     protected string $marca;
     protected string $preco;
-    private string $quantidade;
 
     public function __construct(string $nome, string $marca, string $preco)
     {
@@ -33,6 +32,13 @@ class Produto extends BaseEntity
         return $this->preco;
     }
 
+    public function __toString(): string
+    {
+         return
+            'Foi cadastrado o produto: ' . $this->getNome() .
+            'Da marca: ' . $this->getMarca() .
+            'Com o preço: ' . $this->getPreco(). PHP_EOL;
+    }
 
 }
 
