@@ -1,12 +1,10 @@
 <?php
 
-require_once 'autoload.php';
+namespace shopping;
+require_once 'Vendor/autoloader.php';
 
 // Vamos informar quais classes iremos utilizar
-use App\Models\Produto;
-use App\Base\BaseEntity;
-
-$produtosCadastrados = [];
+use shopping\Models\Produto;
 
 $linhas = "\n============================================\n";
 
@@ -60,8 +58,6 @@ function AcessaOpcoes($entrada): void
             echo "Referente ao produto: " . $cadastrado->getNome();
         }
     }
-
-    $entrada1 = fgets(STDIN);
 
 }
 

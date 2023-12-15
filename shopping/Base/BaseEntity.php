@@ -1,8 +1,6 @@
 <?php
 
-namespace App\Base;
-
-use App\Models\Produto;
+namespace shopping\Base;
 
 abstract class BaseEntity
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Models;
+namespace shopping\Models;
 
-use App\Base\BaseEntity;
+use shopping\Base\BaseEntity;
 
 class Produto extends BaseEntity
 {
@@ -12,6 +12,7 @@ class Produto extends BaseEntity
 
     public function __construct(string $nome, string $marca, string $preco)
     {
+        $this->id    =
         $this->nome  = $nome;
         $this->marca = $marca;
         $this->preco = $preco;

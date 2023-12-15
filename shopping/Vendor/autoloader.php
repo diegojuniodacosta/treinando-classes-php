@@ -1,10 +1,12 @@
 <?php
 
+namespace shopping\Vendor;
+
 // Vamos criar o autoload
 
     spl_autoload_register(function (string $NomeCompletoDaClasse) {
 
-        $caminhoArquivo = str_replace('App', 'shopping', $NomeCompletoDaClasse);
+        $caminhoArquivo = '../' . $NomeCompletoDaClasse;
 
         $caminhoArquivo = str_replace('\\', '/', $caminhoArquivo);
 

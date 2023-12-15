@@ -1,10 +1,6 @@
 <?php
 
-namespace App\Models;
-
-
-require_once '../Base/BaseEntity.php';
-require_once 'Produto.php';
+namespace shopping\Models;
 
 class Torneira extends Produto
 {
