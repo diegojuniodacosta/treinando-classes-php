@@ -8,7 +8,7 @@ use shopping\Models\Produto;
 
 $linhas = "\n============================================\n";
 
-echo "Vamos apresentar nosso projeto Shopping!";
+echo "Vamos apresentar nosso projeto Shopping!!";
 
 echo $linhas;
 
