@@ -63,10 +63,9 @@ function AcessaOpcoes($entrada): void
         }
         echo "Digite o Id: " . PHP_EOL;
         $escolhaProduto = fgets(STDIN);
+        foreach ($produtosCadastrados as $cadastrado)
         if ($escolhaProduto == $cadastrado->getId()){
             echo "Produto escolhido é: " . $cadastrado->getNome();
-        } else{
-            echo $cadastrado->getId();
         }
     }
 
