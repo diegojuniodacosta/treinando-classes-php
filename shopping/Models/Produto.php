@@ -3,27 +3,33 @@
 namespace shopping\Models;
 
 use shopping\Base\BaseEntity;
+use shopping\Traits\ImprimeTexto;
 
 class Produto extends BaseEntity
 {
+    use ImprimeTexto;
     protected string $nome;
-    protected string $marca;
+    protected Marca $marca;
     protected string $preco;
 
     public function __construct(string $nome, string $marca, string $preco)
     {
-        $this->id    =
-        $this->nome  = $nome;
-        $this->marca = $marca;
-        $this->preco = $preco;
+        global $data;
+        $this->id          = ++self::$incrementador;
+        $this->createdDate = $data;
+        $this->updateDate  = $data;
+        $this->nome        = $nome;
+        $this->marca       = new Marca($marca);
+        $this->preco       = $preco;
+
     }
 
-    public function getNome()
+    public function getNome(): string
     {
         return $this->nome;
     }
 
-    public function getMarca(): string
+    public function getMarca(): Marca
     {
         return $this->marca;
     }
@@ -31,14 +37,6 @@ class Produto extends BaseEntity
     public function getPreco(): string
     {
         return $this->preco;
-    }
-
-    public function __toString(): string
-    {
-         return
-            'Foi cadastrado o produto: ' . $this->getNome() .
-            'Da marca: ' . $this->getMarca() .
-            'Com o preço: ' . $this->getPreco(). PHP_EOL;
     }
 
 }

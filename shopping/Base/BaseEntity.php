@@ -2,33 +2,35 @@
 
 namespace shopping\Base;
 
+date_default_timezone_set('America/Sao_Paulo');
+
 abstract class BaseEntity
 {
     protected int $id;
     protected mixed $createdDate;
     protected mixed $updateDate;
-    private static int $incrementador = 0;
+    protected static int $incrementador = 0;
+
 
     public function getId(): int
     {
-       $this->id = ++self::$incrementador;
        return $this->id;
     }
 
     /**
-     * @return mixed
+     * @return string
      */
-    public function getCreatedDate(): mixed
+    public function getCreatedDate(): string
     {
-        return $this->createdDate;
+        return $this->createdDate = date('d/m/y H:i');
     }
 
     /**
-     * @return mixed
+     * @return string
      */
-    public function getUpdateDate(): mixed
+    public function getUpdateDate(): string
     {
-        return $this->updateDate;
+        return $this->updateDate = date('d/m/y H:i');
     }
 
 }

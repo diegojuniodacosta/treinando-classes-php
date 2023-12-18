@@ -1,6 +1,7 @@
 <?php
 
 namespace shopping;
+
 require_once 'Vendor/autoloader.php';
 
 // Vamos informar quais classes iremos utilizar
@@ -45,17 +46,27 @@ function AcessaOpcoes($entrada): void
     }
 
     if ($entrada == '2'){
-        foreach ($produtosCadastrados as $produto){
-            echo $produto->__toString();
+        if (is_null($produtosCadastrados)){
+            echo "Nenhum Produto Cadastrado" . PHP_EOL;
+        }else{
+            foreach ($produtosCadastrados as $produto){
+                echo $produto->__toString();
+            }
         }
     }
 
     if ($entrada == '3'){
         echo "Escolha os produtos: \n";
         foreach ($produtosCadastrados as $cadastrado){
-            echo "Digite o Id: ";
+            echo "Id: " . $cadastrado->getId();
+            echo " Referente ao produto: " . $cadastrado->getNome();
+        }
+        echo "Digite o Id: " . PHP_EOL;
+        $escolhaProduto = fgets(STDIN);
+        if ($escolhaProduto == $cadastrado->getId()){
+            echo "Produto escolhido é: " . $cadastrado->getNome();
+        } else{
             echo $cadastrado->getId();
-            echo "Referente ao produto: " . $cadastrado->getNome();
         }
     }
 
