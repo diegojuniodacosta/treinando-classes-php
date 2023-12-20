@@ -48,10 +48,9 @@ function AcessaOpcoes($entrada): void
     if ($entrada == '2'){
         if (is_null($produtosCadastrados)){
             echo "Nenhum Produto Cadastrado" . PHP_EOL;
-        }else{
-            foreach ($produtosCadastrados as $produto){
-                echo $produto->__toString();
-            }
+        }
+        foreach ($produtosCadastrados as $produto){
+            echo $produto->__toString();
         }
     }
 
@@ -62,11 +61,26 @@ function AcessaOpcoes($entrada): void
             echo " Referente ao produto: " . $cadastrado->getNome();
         }
         echo "Digite o Id: " . PHP_EOL;
-        $escolhaProduto = fgets(STDIN);
-        foreach ($produtosCadastrados as $cadastrado)
-        if ($escolhaProduto == $cadastrado->getId()){
-            echo "Produto escolhido é: " . $cadastrado->getNome();
+        $escolhaProduto = trim(fgets(STDIN));
+
+        // Converte $idsProdutos para o mesmo tipo de $escolhaProduto
+        $idsProdutos = array_map(function($produto) {
+            return $produto->getId();
+        }, $produtosCadastrados);
+
+        // Verifica se tem $escolhaProduto em $idsProdutos
+        if (in_array($escolhaProduto, $idsProdutos)) {
+            foreach ($produtosCadastrados as $cadastrado) {
+                if ($escolhaProduto == $cadastrado->getId()) {
+                    echo "Produto escolhido é: " . $cadastrado->getNome();
+                    break;
+                }
+            }
+        } else {
+            echo "Produto não encontrado.";
         }
+
+
     }
 
 }
