@@ -17,7 +17,8 @@ while (true) {
     echo "Escolha uma das opções do menu: \n";
     echo "1) Cadastrar Produto\n";
     echo "2) Visualizar Produtos\n";
-    echo "3) Escolher Produto\n\n";
+    echo "3) Escolher Produto\n";
+    echo "4) Realizar Pedido\n\n";
 
     $entrada = trim(fgets(STDIN));
 
@@ -26,7 +27,7 @@ while (true) {
 }
 function AcessaOpcoes($entrada): void
 {
-    global $produtosCadastrados, $linhas, $cadastrado;
+    global $produtosCadastrados, $linhas, $cadastrado, $produtoEscolhido;
 
     if ($entrada == '1'){
         echo "Digite o nome do produto: ";
@@ -73,6 +74,7 @@ function AcessaOpcoes($entrada): void
             foreach ($produtosCadastrados as $cadastrado) {
                 if ($escolhaProduto == $cadastrado->getId()) {
                     echo "Produto escolhido é: " . $cadastrado->getNome();
+                    $produtoEscolhido = $cadastrado->getId();
                     break;
                 }
             }
@@ -80,9 +82,17 @@ function AcessaOpcoes($entrada): void
             echo "Produto não encontrado.";
         }
 
-
     }
 
+    if ($entrada == '4'){
+        echo "Vamos fazer o pedido" . PHP_EOL;
+        var_dump($produtoEscolhido);
+
+
+
+
+
+    }
 }
 
 
