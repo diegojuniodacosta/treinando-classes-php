@@ -3,25 +3,28 @@
 namespace shopping\Models;
 
 use shopping\Base\BaseEntity;
-use shopping\Traits\ImprimeTexto;
+use shopping\Traits\EntradaDois;
+use shopping\Traits\EntradaQuatro;
+use shopping\Traits\EntradaCinco;
+
 
 class Produto extends BaseEntity
 {
-    use ImprimeTexto;
+    use EntradaDois;
+    use EntradaQuatro;
+    use EntradaCinco;
     protected string $nome;
     protected Marca $marca;
-    protected string $preco;
+    protected float $preco;
 
-    public function __construct(string $nome, string $marca, string $preco)
+    public function __construct(string $nome, string $marca, float $preco)
     {
-        global $data;
         $this->id          = ++self::$incrementador;
-        $this->createdDate = $data;
-        $this->updateDate  = $data;
+        $this->createdDate = \date('d/m/y H:i');
+        $this->updateDate  = \date('d/m/y H:i');
         $this->nome        = $nome;
         $this->marca       = new Marca($marca);
         $this->preco       = $preco;
-
     }
 
     public function getNome(): string
@@ -34,9 +37,14 @@ class Produto extends BaseEntity
         return $this->marca;
     }
 
-    public function getPreco(): string
+    public function getPreco(): float
     {
         return $this->preco;
+    }
+
+    public function setPreco(float $preco): void
+    {
+        $this->preco = $preco;
     }
 
 }

@@ -4,15 +4,39 @@ namespace shopping\Models;
 
 class Pedido
 {
-    private string $total;
+   private array $itens;
+   private string $observation;
 
-    public function getTotal(): string
+    /**
+     * @param array $itens
+     * @param string $observation
+     *
+     */
+    public function __construct(array $itens)
     {
-        return $this->total;
+        $this->itens = $itens;
+        //$this->observation = $observation;
     }
 
-    public function setTotal(string $total): void
+    public function calcularTotal(): float
     {
-        $this->total = $total;
+        $total = 0;
+        foreach ($this->itens as $item){
+            $total += $item->getTotal();
+        }
+        return $total;
+    }
+
+    /**
+     * @return string
+     */
+    public function getObservation(): string
+    {
+        return $this->observation;
+    }
+
+    public function __toString(): string
+    {
+        return $this->observation;
     }
 }

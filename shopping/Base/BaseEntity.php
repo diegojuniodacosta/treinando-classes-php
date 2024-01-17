@@ -17,20 +17,22 @@ abstract class BaseEntity
        return $this->id;
     }
 
-    /**
-     * @return string
-     */
-    public function getCreatedDate(): string
+    public function getCreatedDate(): mixed
     {
-        return $this->createdDate = date('d/m/y H:i');
+        return $this->createdDate;
+    }
+
+    public function getUpdateDate(): mixed
+    {
+        return $this->updateDate;
     }
 
     /**
-     * @return string
+     * @param int $id
      */
-    public function getUpdateDate(): string
+    public function setId(int $id): void
     {
-        return $this->updateDate = date('d/m/y H:i');
+        $this->id = $id;
     }
 
 }

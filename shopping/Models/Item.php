@@ -4,15 +4,26 @@ namespace shopping\Models;
 
 class Item
 {
-    private int $quantidade;
+    private float $quantidade;
+    private Produto $produto;
 
-    public function getQuantidade(): int
-    {
-        return $this->quantidade;
-    }
-
-    public function setQuantidade(int $quantidade): void
+    /**
+     * @param float $quantidade
+     * @param Produto $produto
+     */
+    public function __construct(float $quantidade, Produto $produto)
     {
         $this->quantidade = $quantidade;
+        $this->produto    = $produto;
+    }
+
+    public function getTotal(): float|int
+    {
+        return $this->quantidade * $this->produto->getPreco();
+    }
+
+    public function __toString(): string
+    {
+        return $this->quantidade;
     }
 }

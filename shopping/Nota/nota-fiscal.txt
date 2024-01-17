@@ -1,0 +1,204 @@
+
+Nome do Cliente: Viviane Costa
+Produto: chocolate
+Preço unitário: 19.5
+Valor Total do Pedido: 97
+Data de Venda: 27/12/23 21:21
+Observação: chocolate ao leite
+Nota fiscal gerada corretamente
+
+Nome do Cliente: Diego
+Produto: ALicate
+Preço unitário: 19.5
+Quantidade : 5
+Valor Total do Pedido: 97.5
+Data de Venda: 27/12/23 21:26
+Observação: Coloca na caixa por favor!
+Nota fiscal gerada corretamente
+
+Nome do Cliente: Di
+Produto: Alicate
+Preço unitário: 19.5
+Quantidade: 5
+Valor Total do Pedido: 97.5
+Data de Venda: 27/12/23 21:28
+Observação: Embala bem embalado!
+Nota fiscal gerada corretamente
+
+Nome do Cliente: Didi
+Produto: Caneta
+Marca: Bic
+Preço unitário: 8.95
+Quantidade: 95
+Valor Total do Pedido: 850.25
+Data de Venda: 27/12/23 21:31
+Observação: Coloca na caixa e passa durex!
+Nota fiscal gerada corretamente
+
+Nome do Cliente: sss
+Produto: w
+Marca: q
+Preço unitário: 2
+Quantidade: 2
+Valor Total do Pedido: 4
+Data de Venda: 27/12/23 22:42
+Observação: wwwww
+Nota fiscal gerada corretamente
+
+Nome do Cliente: di
+Produto: TorneiraMarca: DecaPreço unitário: 50
+Quantidade: 2
+Valor Total do Pedido: 100
+Data de Venda: 31/12/23 11:32
+Observação: w
+Nota fiscal gerada corretamente
+
+Nome do Cliente: sd
+Produto: teste
+Marca: r
+Preço unitário: 2
+Quantidade: 3
+Valor Total do Pedido: 6
+Data de Venda: 31/12/23 11:34
+Observação: d
+Nota fiscal gerada corretamente
+
+Nome do Cliente: df
+Produto: www
+Marca: eee
+Preço unitário: 2
+Quantidade: 3
+Valor Total do Pedido: 6
+Data de Venda: 31/12/23 12:50
+Observação: ddd
+Nota fiscal gerada corretamente
+
+Nome do Cliente: rf
+Produto: w
+Marca: e
+Preço unitário: 3
+Quantidade: 3
+Valor Total do Pedido: 9
+Data de Venda: 31/12/23 13:11
+Observação: eeeee
+Observação2: 
+Nota fiscal gerada corretamente
+
+Nome do Cliente: ws
+Produto: TorneiraMarca: DecaPreço unitário: 50
+Quantidade: 2
+Valor Total do Pedido: 100
+Data de Venda: 31/12/23 17:08
+Observação: www
+Observação2: 
+Nota fiscal gerada corretamente
+
+Nome do Cliente: sd
+Produto: w
+
+Marca: e
+
+Preço unitário: 2
+Quantidade: 2
+Valor Total do Pedido: 4
+Data de Venda: 31/12/23 17:51
+Observação: 
+
+Observação2: 
+Nota fiscal gerada corretamente
+
+Nome do Cliente: sd
+Produto: q
+
+Marca: w
+
+Preço unitário: 2
+Quantidade: 2
+Valor Total do Pedido: 4
+Data de Venda: 31/12/23 17:56
+Observação: 
+Observação2: 
+Nota fiscal gerada corretamente
+
+Nome do Cliente: sss
+Produto: w
+
+Marca: e
+
+Preço unitário: 3
+Quantidade: 2
+Valor Total do Pedido: 6
+Data de Venda: 31/12/23 18:06
+Observação: 0
+Observação2: 0
+Nota fiscal gerada corretamente
+
+Nome do Cliente: df
+Produto: w
+
+Marca: q
+
+Preço unitário: 2
+Quantidade: 2
+Valor Total do Pedido: 4
+Data de Venda: 31/12/23 20:21
+Observação: eeeeeeee
+Nota fiscal gerada corretamente
+
+Nome do Cliente: Romero
+Produto: Ducha
+Marca: Lorenzetti
+Preço unitário: 100
+Quantidade: 4
+Valor Total do Pedido: 400
+Data de Venda: 16/01/24 22:25
+Observação: 
+Nota fiscal gerada corretamente
+
+Nome do Cliente: dineno
+Produto: teste
+
+Marca: teste marca
+
+Preço unitário: 15
+Quantidade: 5
+Valor Total do Pedido: 75
+Data de Venda: 16/01/24 22:33
+Observação: 
+Nota fiscal gerada corretamente
+
+Nome do Cliente: ddddd
+Produto: aaaa
+
+Marca: aa
+
+Preço unitário: 1
+Quantidade: 3
+Valor Total do Pedido: 3
+Data de Venda: 16/01/24 22:36
+Observação: 
+Nota fiscal gerada corretamente
+
+Nome do Cliente: ggggg
+Produto: www
+
+Marca: s
+
+Preço unitário: 3
+Quantidade: 3
+Valor Total do Pedido: 9
+Data de Venda: 16/01/24 22:38
+Observação: 
+Nota fiscal gerada corretamente
+
+Nome do Cliente: dfdf
+Produto: wwww
+
+Marca: d
+
+Preço unitário: 2
+Quantidade: 33
+Valor Total do Pedido: 66
+Data de Venda: 16/01/24 22:42
+Observação: sim sim sim
+Nota fiscal gerada corretamente
