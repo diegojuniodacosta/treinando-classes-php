@@ -19,7 +19,7 @@ class Produto extends BaseEntity
 
     public function __construct(string $nome, string $marca, float $preco)
     {
-        $this->id          = ++self::$incrementador;
+        $this->id          = self::getIncrementador();
         $this->createdDate = \date('d/m/y H:i');
         $this->updateDate  = \date('d/m/y H:i');
         $this->nome        = $nome;

@@ -10,12 +10,11 @@ class Pedido
     /**
      * @param array $itens
      * @param string $observation
-     *
      */
-    public function __construct(array $itens)
+    public function __construct(array $itens, string $observation)
     {
         $this->itens = $itens;
-        //$this->observation = $observation;
+        $this->observation = $observation;
     }
 
     public function calcularTotal(): float
@@ -33,6 +32,14 @@ class Pedido
     public function getObservation(): string
     {
         return $this->observation;
+    }
+
+    /**
+     * @param string $observation
+     */
+    public function setObservation(string $observation): void
+    {
+        $this->observation = $observation;
     }
 
     public function __toString(): string

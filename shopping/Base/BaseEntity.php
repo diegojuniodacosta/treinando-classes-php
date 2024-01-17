@@ -35,4 +35,8 @@ abstract class BaseEntity
         $this->id = $id;
     }
 
+    public function getIncrementador(): int
+    {
+        return self::$incrementador++;
+    }
 }

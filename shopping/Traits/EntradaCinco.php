@@ -12,9 +12,9 @@ trait EntradaCinco
         'Digite o nome do cliente: ' . PHP_EOL ;
     }
 
-    public function __toCincoBody(): string
+    public function __toCincoBody(Pedido $pedido): string
     {
-        global $nomeCliente, $totalPedido, $notaFiscal, $observacao, $escolhaQuantidade;
+        global $nomeCliente, $totalPedido, $notaFiscal, $escolhaQuantidade;
 
         $nomeCliente = trim(fgets(STDIN));
 
@@ -28,7 +28,7 @@ trait EntradaCinco
             "Quantidade: " . $escolhaQuantidade . PHP_EOL .
             "Valor Total do Pedido: " . $totalPedido . PHP_EOL .
             "Data de Venda: " . $this->getCreatedDate() . PHP_EOL .
-            "Observação: " . $observacao . PHP_EOL .
+            "Observação: " . $pedido->getObservation() . PHP_EOL .
             "Nota fiscal gerada corretamente" . PHP_EOL;
     }
 }

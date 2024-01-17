@@ -202,3 +202,71 @@ Valor Total do Pedido: 66
 Data de Venda: 16/01/24 22:42
 Observação: sim sim sim
 Nota fiscal gerada corretamente
+
+Nome do Cliente: Lucas
+Produto: Telefone
+
+Marca: Intelbras
+
+Preço unitário: 10
+Quantidade: 4
+Valor Total do Pedido: 40
+Data de Venda: 17/01/24 09:23
+Observação: Tenho nao
+Nota fiscal gerada corretamente
+
+Nome do Cliente: 
+Produto: a
+
+Marca: a
+
+Preço unitário: 2
+Quantidade: 10
+Valor Total do Pedido: 20
+Data de Venda: 17/01/24 09:51
+Observação: sim
+Nota fiscal gerada corretamente
+
+Nome do Cliente: diego
+Produto: A
+
+Marca: AA
+
+Preço unitário: 5
+Quantidade: 40
+Valor Total do Pedido: 200
+Data de Venda: 17/01/24 11:28
+Observação: sim sim sim
+Nota fiscal gerada corretamente
+
+Nome do Cliente: Diego
+Produto: a
+
+Marca: aa
+
+Preço unitário: 2
+Quantidade: 10
+Valor Total do Pedido: 20
+Data de Venda: 17/01/24 15:29
+Observação: tenho nao
+Nota fiscal gerada corretamente
+
+Nome do Cliente: di
+Produto: Torneira
+Marca: Deca
+Preço unitário: 50
+Quantidade: 5
+Valor Total do Pedido: 250
+Data de Venda: 17/01/24 16:09
+Observação: nao
+Nota fiscal gerada corretamente
+
+Nome do Cliente: s
+Produto: Torneira
+Marca: Deca
+Preço unitário: 50
+Quantidade: 10
+Valor Total do Pedido: 500
+Data de Venda: 17/01/24 16:11
+Observação: s
+Nota fiscal gerada corretamente

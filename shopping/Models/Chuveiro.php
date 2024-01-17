@@ -14,7 +14,7 @@ class Chuveiro extends Produto
      */
     public function __construct(string $potencia, $nome, $marca, $preco)
     {
-        $this->id          = ++self::$incrementador;
+        $this->id          = self::getIncrementador();
         $this->createdDate = \date('d/m/y H:i');
         $this->updateDate  = \date('d/m/y H:i');
         parent::__construct($nome, $marca, $preco);

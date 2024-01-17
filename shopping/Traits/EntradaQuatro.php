@@ -2,6 +2,7 @@
 
 namespace shopping\Traits;
 
+
 trait EntradaQuatro
 {
     public function __toQuatroHeader(): string
