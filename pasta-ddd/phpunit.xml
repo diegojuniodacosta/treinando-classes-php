@@ -1,0 +1,11 @@
+<phpunit>
+    <testsuites>
+        <testsuite name="unit">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+    <logging>
+        <testdoxText outputFile="testes-realizados.txt"/>
+    </logging>
+    <source/>
+</phpunit>

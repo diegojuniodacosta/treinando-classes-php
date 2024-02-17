@@ -1,0 +1,6 @@
+Main (Diego\DDD\Testes\Main)
+ [x] Quantidade de pessoas
+ [x] Cpf com menos de onze numeros nao deve passar
+ [x] Verifica nome das pessoas
+ [x] Encontrar nome na lista
+

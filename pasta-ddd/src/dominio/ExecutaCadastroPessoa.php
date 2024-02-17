@@ -1,8 +1,8 @@
 <?php
 
-namespace Diego\DDD\Dominio;
+namespace Diego\DDD\dominio;
 
-interface CadastraPessoa
+interface ExecutaCadastroPessoa
 {
     public function executar(string $cpf, string $nome);
 }

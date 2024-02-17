@@ -1,6 +1,6 @@
 <?php
 
-namespace Diego\DDD\Dominio;
+namespace Diego\DDD\dominio;
 
 use Exception;
 
@@ -31,8 +31,9 @@ class Pessoa
         if (strlen($cpf) == 11){
             $this->cpf = $cpf;
         }
-
-        throw new Exception('O CPF do usuário é inválido!');
+        else{
+            throw new Exception('O CPF do usuário é inválido!');
+        }
     }
 
     public function getNome(): string
@@ -40,7 +41,10 @@ class Pessoa
         return $this->nome;
     }
 
-
-
+    public function __toString(): string
+    {
+        $s = $this->nome;
+        return sprintf("Pessoa: %s, CPF: %s", (string) $this->nome, (string) $this->cpf);
+    }
 
 }

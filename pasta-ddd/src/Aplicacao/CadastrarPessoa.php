@@ -2,16 +2,16 @@
 
 namespace Diego\DDD\Aplicacao;
 
-use Diego\DDD\Dominio\CadastraPessoa;
+use Diego\DDD\Dominio\ExecutaCadastroPessoa;
 use Diego\DDD\Dominio\Pessoa;
-use Diego\DDD\Dominio\IPessoaRepository;
+use Diego\DDD\Dominio\PessoaRepository;
 use Exception;
 
-class CadastrarPessoa implements CadastraPessoa
+class CadastrarPessoa implements ExecutaCadastroPessoa
 {
-    private IPessoaRepository $pessoaRepository;
+    private PessoaRepository $pessoaRepository;
 
-    public function __construct(IPessoaRepository $pessoaRepository)
+    public function __construct(PessoaRepository $pessoaRepository)
     {
         $this->pessoaRepository = $pessoaRepository;
     }
